@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">USTHWeather</string>
+    <string name="Monday">Thứ 2</string>
+    <string name="Tuesday">Thứ 3</string>
+    <string name="Wednesday">Thứ 4</string>
+    <string name="Thursday">Thứ 5</string>
+    <string name="Friday">Thứ 6</string>
+    <string name="Saturday">Thứ 7</string>
+    <string name="Sunday">Chủ nhật</string>
+    <string name="rainy">Mưa nhiều</string>
+    <string name="sunny">Nắng nóng</string>
+    <string name="sunshine">Nắng nhẹ</string>
+    <string name="paris">Pháp</string>
+    <string name="hanoi">Hà Nội</string>
+    <string name="windy">Gió nhẹ</string>
+    <string name="snowy">Tuyết rơi</string>
+</resources>

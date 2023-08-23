@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">USTHWeather</string>
+    <string name="Tuesday">Tue</string>
+    <string name="Wednesday">Wed</string>
+    <string name="Thursday">Thu</string>
+    <string name="Friday">Fri</string>
+    <string name="Saturday">Sat</string>
+    <string name="Sunday">Sun</string>
+    <string name="windy">windy</string>
+    <string name="snowy">snowy</string>
+    <string name="rainy">rainy</string>
+    <string name="sunny">sunny</string>
+    <string name="sunshine">sunshine</string>
+    <string name="paris">Paris</string>
+    <string name="hanoi">Hanoi</string>
+    <string name="toulouse">Toulouse</string>
+    <string name="Monday">Mon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
