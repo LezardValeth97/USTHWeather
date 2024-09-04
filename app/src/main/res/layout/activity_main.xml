@@ -22,10 +22,21 @@
     <!--        tools:ignore="MissingConstraints">-->
     <!--    </androidx.fragment.app.FragmentContainerView>-->
 
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_gravity="top"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+    </com.google.android.material.tabs.TabLayout>
+
+
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
     </androidx.viewpager.widget.ViewPager>
 
 
