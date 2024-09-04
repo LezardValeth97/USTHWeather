@@ -21,7 +21,7 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+//         Inflate the layout for this fragment
 //        TextView day = new TextView(getContext());
 //        day.setText("Thursday");
 //
