@@ -15,5 +15,6 @@
     <string name="hanoi">Hanoi</string>
     <string name="toulouse">Toulouse</string>
     <string name="Monday">Mon</string>
+    <string name="title_activity_maps">MapsActivity</string>
 
 </resources>

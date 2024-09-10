@@ -8,19 +8,23 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.util.Log;
 
 import com.google.android.material.tabs.TabLayout;
 
 public class WeatherActivity extends AppCompatActivity {
     private static final String TAG = "WeatherActivity";
-
+    MediaPlayer mp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        mp = MediaPlayer.create(this, R.raw.farout);
+//        mp.setVolume(70,70);
+        mp.start();
 /*
         // Create a new Fragment to be placed in the activity layout
         ForecastFragment f = new ForecastFragment();
@@ -28,7 +32,6 @@ public class WeatherActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().add(
                 R.id.activity_weather, f).commit();
 */
-
         PagerAdapter adapter = new HomeFragmentPagerAdapter(getSupportFragmentManager());
         ViewPager pager = findViewById(R.id.pager);
         pager.setOffscreenPageLimit(3);
@@ -37,7 +40,10 @@ public class WeatherActivity extends AppCompatActivity {
         TabLayout tablayout = findViewById(R.id.tablayout);
         tablayout.setupWithViewPager(pager);
 
+
+
         Log.i(TAG, "===== App Created =====");
+
     }
 
     @Override
@@ -61,6 +67,8 @@ public class WeatherActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
+        mp.stop();
+        mp.release();
         Log.i(TAG, "+++++ App Stopped +++++");
     }
 
