@@ -96,18 +96,6 @@ public class WeatherActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_refresh:
-                AsyncTask<Void, Integer, Void> task = new AsyncTask<Void, Integer, Void>() {
-                    @Override
-                    protected Void doInBackground(Void... voids) {
-                        return null;
-                    }
-
-                    @Override
-                    protected void onPostExecute(Void voids){
-                        Toast.makeText(getApplicationContext(),"Updated",Toast.LENGTH_LONG).show();
-                    }
-                };
-                task.execute();
                 return true;
             case R.id.action_settings:
                 Intent myIntent = new Intent(this, PrefActivity.class);
