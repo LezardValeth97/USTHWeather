@@ -13,8 +13,10 @@
     <string name="sunshine">sunshine</string>
     <string name="paris">Paris</string>
     <string name="hanoi">Hanoi</string>
-    <string name="toulouse">Toulouse</string>
+    <string name="toulouse" translatable="false">Toulouse</string>
     <string name="Monday">Mon</string>
-    <string name="title_activity_maps">MapsActivity</string>
+    <string name="action_refresh" translatable="false">action_refresh</string>
+    <string name="action_settings" translatable="false">action_settings</string>
+    <string name="title_activity_pref">PrefActivity</string>
 
 </resources>
