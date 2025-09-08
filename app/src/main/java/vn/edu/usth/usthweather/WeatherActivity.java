@@ -21,6 +21,10 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.tabs.TabLayout;
 
+import vn.edu.usth.usthweather.PrefActivity;
+import vn.edu.usth.usthweather.R;
+import vn.edu.usth.usthweather.WeatherAndForecastFragment;
+
 public class WeatherActivity extends AppCompatActivity {
     private static final String TAG = "WeatherActivity";
 //    MediaPlayer mp;
@@ -96,6 +100,18 @@ public class WeatherActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_refresh:
+                AsyncTask<Void, Integer, Void> task = new AsyncTask<Void, Integer, Void>() {
+                    @Override
+                    protected Void doInBackground(Void... voids) {
+                        return null;
+                    }
+
+                    @Override
+                    protected void onPostExecute(Void voids){
+                        Toast.makeText(getApplicationContext(),"Updated",Toast.LENGTH_LONG).show();
+                    }
+                };
+                task.execute();
                 return true;
             case R.id.action_settings:
                 Intent myIntent = new Intent(this, PrefActivity.class);
@@ -105,6 +121,19 @@ public class WeatherActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
+//    public void onClick(View view) {
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                Bitmap b = loadImageFromNetwork("http://example.com/img.png");
+//                mImageView.setImageBitmap(b);
+//            }
+//        }).start();
+//    }
+
+
+
 
     public class HomeFragmentPagerAdapter extends FragmentPagerAdapter {
         private final int PAGE_COUNT = 3;

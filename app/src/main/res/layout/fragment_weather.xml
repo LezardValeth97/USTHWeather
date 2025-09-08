@@ -12,7 +12,8 @@
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
         android:scaleType="fitXY"
-        android:src="@drawable/frame"/>
+        android:src="@drawable/frame"
+        tools:ignore="ContentDescription"/>
 
 
     <ImageView
